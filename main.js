@@ -1,4 +1,4 @@
-const prompt = require('prompt-sync')({sigint: true});
+const prompt = require('prompt-sync')({ sigint: true });
 
 // Question "q" should prompt user: 
 const qaquery = prompt(
@@ -37,5 +37,21 @@ else if (qaquery === "deconstruct") {
 	} else if (deconstruct1 === "orange") {
 		console.log("Your colors are Red and Yellow.");
 	} else console.log("error!");
-} 
+}
 else console.log("error!")
+
+// Color 			combining
+
+// inputs			output
+// red + blue		purple
+// red + yellow		orange
+// blue + yellow	green
+// anything else	"error"
+
+// Color 			deconstructing
+
+// input			outputs
+// purple			red + blue
+// orange			red + yellow
+// green			blue + yellow
+// anything else	error
